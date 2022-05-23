@@ -1,0 +1,85 @@
+
+@media (min-width: 980px){
+  body {
+    position: relative !important;
+  }
+  .wrapper {
+    max-width: 80%;
+    height: 100vh;
+    margin: 0;
+    display: grid !important;
+    grid-template-columns: max-content 1fr 2fr 100px;
+    grid-template-rows: max-content 2fr 250px;
+    
+    box-shadow: 8px 2px 15px gray,
+                -3px -2px 12px lightgray,
+                -5px -6px 13px goldenrod;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .circle {
+    display: block !important;
+    position: fixed;
+    bottom: 40px;
+    right: 300px;
+    width: 40%;
+    height: 20rem;
+    background: #414141;
+    transform: translate(400px,50px) rotate(-42deg);
+    border-radius: 50%/100px 100px 0 0;
+    z-index: 1;
+  }
+ 
+  .side-menu {
+    position: absolute;
+    bottom: 0;
+  }
+
+  header {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    z-index:2;
+  }
+  main {
+    grid-column: 2 / 4;
+    grid-row: 1 / 4;
+    z-index: 1;
+    justify-content: center;
+  }
+  footer {
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+
+  /* Style */
+  .banner .side-menu {
+    background: rgba(97, 13, 13, 0.863);
+  }
+  .banner {
+    border-bottom-right-radius: 12px;
+  }
+  section {
+    display: flex !important;
+    font-size: 2rem;
+    
+  }
+  section button {
+    font-size: 1.5rem !important;
+  }
+  footer {
+    height: 50px;
+  }
+
+  footer .social {
+    display: none;
+  }
+  
+}
+
+
+
+
+
+
+

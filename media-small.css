@@ -1,0 +1,82 @@
+@import 'main.css';
+@import 'media-medium.css';
+@import 'media-large.css';
+
+* {
+  padding:0;
+  margin: 0;
+}
+html {
+  font-size: 0.8rem
+}
+body {
+  width: 100%;
+}
+.wrapper {
+  margin: 0;
+  max-width: 100%;
+  display: block;
+  border-radius: 0;
+  height: 100vh;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url('woman.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main {
+  font-size: 1.3rem;
+  min-height: 50vh;
+  display: block;
+}
+section {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1rem;
+}
+footer {
+  display: block;
+}
+.circle {
+  display: none;
+}
+.banner nav {
+  opacity: 0.5;
+}
+.banner nav:hover {
+  opacity: 0.8;
+}
+.banner ul li {
+  margin:12px;
+}
+.banner .person {
+  padding: 0;
+  border-radius: 0;
+}
+.person .image {
+  display: none;
+}
+.person .name {
+  background: rgba(230,230,230,0.4);
+  align-self: stretch;
+  text-align: center;
+  padding: 20px;
+}
+section button {
+  font-size: 1rem;
+}
+section button:hover {
+  transform: scale(1)
+}
+
+
+

@@ -1,0 +1,111 @@
+
+
+@media (min-width: 550px){
+  * {
+    padding:0;
+    margin: 0;
+  }
+  html {
+    font-size: 0.8rem
+  }
+  body {
+    width: 100%;
+  }
+  .wrapper {
+    margin: 0;
+    max-width: 100%;
+    display: block;
+    overflow: auto;
+    border-radius: 0;
+    height: 100vh;
+    position: relative;
+  }
+  header {
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: space-between;
+    background-image: url('woman.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main {
+    font-size: 1.3rem;
+    min-height: 50vh;
+    display: flex !important;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    display: block;
+  }
+  .circle {
+    display: none;
+  }
+  /* .banner {
+    border-radius: 0px 50%/100px 100%;
+  } */
+  .banner nav {
+    opacity: 0.5;
+    align-self: start;
+    position: fixed;
+    top: 40%;
+    left: -135px;
+    border-right: 4px solid #1f4e52;
+    width: 150px;
+  }
+  .banner nav:hover {
+    opacity: 0.8;
+    left:0;
+  }
+  .banner ul li {
+    margin:12px;
+  }
+  .banner .person {
+    padding: 0;
+    border-radius: 0;
+    flex: 2 100%;
+  }
+  .person .image {
+    display: none;
+  }
+  .banner .person .name {
+    background: rgba(230,230,230,0.4);
+    align-self: stretch;
+    text-align: center;
+    padding: 20px;
+    font-size: calc(2rem + 1.2vw);
+  }
+  section {
+    display: grid !important;
+    grid-template-columns: 200px 1fr;
+    grid-auto-rows: 1fr 1fr max-content;
+    grid-gap: 20px;
+  }
+  section h1 {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    align-self: center;
+    text-align: left;
+  }
+  section p {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: end;
+    text-align: center;
+    max-width: 450px;
+  }
+  section button {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-size: 1rem;
+    justify-self: center;
+    
+  }
+  section button:hover {
+    transform: scale(1)
+  }
+}
